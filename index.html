@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <title>Screen Recording With Audio</title>
+  
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  
+    <div>
+      <h1>Screen Recording With Audio</h1>
+      <video controls autoplay></video><br>
+	  <div id="controls">
+		  <button id="shareScreen" onclick="onShareScreen()">Share Screen</button>
+		  <button id="rec" onclick="onBtnRecordClicked()" disabled>Start Recording</button>
+		  <button id="stop" onclick="onBtnStopClicked()" disabled>Stop Recording</button>
+		  <!--<button id="stateButton" onclick="onStateClicked()">trace state</button>-->
+	  </div>
+    </div>
+    <a id="downloadLink" download="mediarecorder.webm" name="mediarecorder.webm" href></a>
+    <p id="data"></p>
+    <script src="https://webrtchacks.github.io/adapter/adapter-latest.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
